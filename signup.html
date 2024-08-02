@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>OSAAGOS WEBSPAGE</title>
+  <script src="https://kit.fontawesome.com/e66c7fb488.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <section class="flex">
+            <div class="flex">
+                <img src="./images/osaagoslogo.jpg" alt="osaagos" />
+                <h3>OSAAGOS ALUMNI<br> ASSOCIATION</h3>
+            </div>
+            <nav id="topnav">
+                <a href="signup.html">Sign up</a>
+                <a href="">Member Login</a>
+
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Find Alumni</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                        <a href="#">Name</a>
+                        <a href="#">Year of Graduation</a>
+                        <a href="#">Field of Study</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Matriculation no</a>
+                    </div>
+            </nav>
+        </section>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="alumniprofile.html">Our Alumni</a>
+            <a href="">Networking</a>
+            <a href="events.html">Events Management</a>
+            <a href="">News and Announcement</a>
+            <a href="">Media Gallery</a>
+            <a href="">Job Board</a>
+            <a href="">Donation and Fundraising</a>
+            <a href="">Admin Dashboard</a>
+        </nav>
+
+    </header>
+    <main id="signup">
+
+        <form action="" method="post">
+            <div class="container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="fullname"><b>Fullname</b></label><br>
+                <input type="text" placeholder="Enter Full name" name="name" required><br>
+
+                <label for="email"><b>Email</b></label><br>
+                <input type="text" placeholder="Enter Email" name="email" required><br>
+
+                <label for="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" name="psw" required><br>
+                <label for="psw-repeat"><b>Repeat Password</b></label><br>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <hr>
+                <button type="submit" id="signup">Sign Up</button><br>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+            </div>
+        </form>
+
+    </main>
+
+    <!--the footer section-->
+    <footer style="background-color: gray;">
+        <div class="row">
+
+            <div class="col-lg-3" id="footerlogo">
+                <img src="images/osaagoslogo.png" alt="osaagos">
+            </div>
+
+            <div class="col-lg-3">
+                <h4>OSAAGOS <br> <br> ALUMNI <br> <br> ASSOCIATION</h4>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="footerlinks">
+                    <h3>Useful Links</h3>
+                    <a href="">About Us</a>
+                    <a href="">Vision and Mission</a>
+                    <a href="">Success Story</a>
+                    <a href="">Media Gallery</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3" id="col4">
+                <h3>Contact Us</h3>
+                <p>ALUMNI OFFICE:</p>
+                <address>27, Socrates Building, Morehouse street, Kigali, USA.</address>
+                <input type="email" name="email" value="" />
+                <p>SOCIAL HANDLES</p>
+                <h2><a href=""><i class="fa-regular fa-envelope"></i></a></h2>
+                <img class="icon" src="images/icon-facebook.svg" alt="icon-facebook">
+                <img class="icon" src="images/icon-instagram.svg" alt="icon-instagram">
+                <img class="icon" src="images/icon-twitter.svg" alt="icon-twitter">
+            </div>
+
+        </div>
+    </footer>
+    <aside class="aside">
+        <h5>GROUP A | Copyright &copy; 2023</h5>
+    </aside>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="osaagos.js"></script>
+</body>
+
+</html>
